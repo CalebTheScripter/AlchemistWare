@@ -21,7 +21,7 @@ WindUI:Popup({
     Title = "Welcome!",
     Icon = "sparkles",
     IconThemed = true,
-    Content = "Welcome to " .. gradient("LightingWare V2", Color3.fromHex("#4FC3F7"), Color3.fromHex("#0288D1")) .. ".",
+    Content = "Welcome to " .. gradient("Allusive", Color3.fromHex("#4FC3F7"), Color3.fromHex("#0288D1")) .. ".",
     Buttons = {
         {
             Title = "Continue",
@@ -37,7 +37,7 @@ WindUI:Popup({
 repeat task.wait() until Confirmed
 
 local Window = WindUI:CreateWindow({
-    Title = "LightningWare V2 (Beta Test)",
+    Title = "Allusive",
     Icon = "sparkles",
     IconThemed = true,
     Size = UDim2.fromOffset(600, 400),
