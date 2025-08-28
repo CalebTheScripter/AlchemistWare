@@ -80,28 +80,12 @@ local UpadTab = Tabs.Imp:Tab({ Title = "Update Log", Icon = "scroll-text" })
 local VisualsTab = Tabs.Main:Tab({ Title = "Visuals", Icon = "eye" })
 local MainTab = Tabs.Main:Tab({ Title = "Actions", Icon = "star" })
 local WindowTab = Tabs.Customise:Tab({ Title = "Window and File Configuration", Icon = "settings" })
-
-UpadTab:Paragraph({
-    Title = "Update Log v0.005",
-    Desc = [[
-• Improved Speed Strafe, etc.
-• Fixed Infinite Slide
-• Fixed lag
-• Added Show Game Time
-    ]],
-})
-
-UpadTab:Paragraph({
-    Title = "Update Log v0.001",
-    Desc = "• Enhanced Bhop acceleration for smoother movement.",
-})
-
 local autoRespawnMethod = nil
 local respawnConnection
 local lastSavedPosition
 
 local autoRespawnToggle = VisualsTab:Toggle({
-    Title = "Automatic Respawn",
+    Title = "Auto Respawn",
     Value = false,
     Callback = function(state)
         getgenv().AutoRespawnEnabled = state
